@@ -1,0 +1,99 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "casa mia",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "InstantPowerUsageIntent",
+                    "slots": [
+                        {
+                            "name": "What",
+                            "type": "CONSUMPTION_DEVICE"
+                        }
+                    ],
+                    "samples": [
+                        "quanto sta consumando {What}",
+                        "il consumo attuale di {What}"
+                    ]
+                },
+                {
+                    "name": "HistoricEnergyUsageIntent",
+                    "slots": [
+                        {
+                            "name": "What",
+                            "type": "CONSUMPTION_DEVICE"
+                        },
+                        {
+                            "name": "When",
+                            "type": "HISTORIC_TIME"
+                        }
+                    ],
+                    "samples": [
+                        "quanto ha consumato {What} {When}",
+                        "il consumo di {What} {When}",
+                        "quanto ha consumato {When}",
+                        "il consumo di {When}"
+                    ]
+                },
+                {
+                    "name": "HeatingDurationTodayIntent",
+                    "slots": [],
+                    "samples": [
+                        "quanto è andato il riscaldamento oggi",
+                        "quanto è andato il riscaldamento",
+                        "quanto ha scaldato"
+                    ]
+                },
+                {
+                    "name": "CoolingDurationTodayIntent",
+                    "slots": [],
+                    "samples": [
+                        "quanto è andato il clima oggi",
+                        "quanto è andato il clima",
+                        "quanto ha raffreddato",
+                        "quanto ha rinfrescato"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "CONSUMPTION_DEVICE",
+                    "values": [
+                      {"name":{"value":"casa"}},
+                      {"name":{"value":"lavatrice"}},
+                      {"name":{"value":"sala"}},
+                      {"name":{"value":"bagno"}},
+                      {"name":{"value":"camera"}},
+                      {"name":{"value":"ingresso"}},
+                      {"name":{"value":"frigo"}}
+                    ]
+                },
+                {
+                    "name": "HISTORIC_TIME",
+                    "values": [
+                      {"id": "giorno", "name":{"value":"oggi"}},
+                      {"id": "settimana", "name":{"value":"questa settimana"}},
+                      {"id": "mese", "name":{"value":"questo mese"}}
+                    ]
+                }
+            ]
+        }
+    }
+  }
+  

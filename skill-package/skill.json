@@ -1,0 +1,36 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "it-IT": {
+          "summary": "Skill Alexa per interagire con Home Assistant.",
+          "examplePhrases": [
+            "Alexa chiedi a casa mia quanto sta consumando camera"
+          ],
+          "name": "alexa-casa",
+          "description": "Skill Alexa per interagire con Home Assistant."
+        },
+        "en-US": {
+          "summary": "Alexa skill to interact with Home Assistant.",
+          "examplePhrases": [
+            "Alexa ask my house how much power is bedroom using"
+          ],
+          "name": "alexa-house",
+          "description": "Alexa skill to interact with Home Assistant."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "YOUR_ARN_HERE"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

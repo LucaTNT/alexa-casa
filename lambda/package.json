@@ -1,0 +1,19 @@
+{
+  "name": "alexa-casa",
+  "version": "1.0.0",
+  "description": "Skill Alexa per interagire con Home Assistant - An Alexa skill to interact with Home ASsistant.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luca Zorzi",
+  "license": "Apache",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "dependencies": {
+    "ask-sdk-core": "^2.6.0",
+    "ask-sdk-model": "^1.18.0",
+    "aws-sdk": "^2.326.0"
+  }
+}

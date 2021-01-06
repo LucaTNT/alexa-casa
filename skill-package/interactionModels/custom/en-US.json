@@ -1,0 +1,98 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my house",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "InstantPowerUsageIntent",
+                    "slots": [
+                        {
+                            "name": "What",
+                            "type": "CONSUMPTION_DEVICE"
+                        }
+                    ],
+                    "samples": [
+                        "how much power is {What} using",
+                        "the current power of {What}"
+                    ]
+                },
+                {
+                    "name": "HistoricEnergyUsageIntent",
+                    "slots": [
+                        {
+                            "name": "What",
+                            "type": "CONSUMPTION_DEVICE"
+                        },
+                        {
+                            "name": "When",
+                            "type": "HISTORIC_TIME"
+                        }
+                    ],
+                    "samples": [
+                        "how much did {What} consume {When}",
+                        "the power consumption of {What} {When}",
+                        "the power used {When}",
+                        "the power consumption {When}"
+                    ]
+                },
+                {
+                    "name": "HeatingDurationTodayIntent",
+                    "slots": [],
+                    "samples": [
+                        "how long was the heating on today",
+                        "how much did the heating work today"
+                    ]
+                },
+                {
+                    "name": "CoolingDurationTodayIntent",
+                    "slots": [],
+                    "samples": [
+                        "how long was the a c on today",
+                        "how much did the a c work today",
+                        "how long was the air conditioning on today",
+                        "how much did the air conditioning work today"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "CONSUMPTION_DEVICE",
+                    "values": [
+                      {"name":{"value":"house"}},
+                      {"name":{"value":"washer"}},
+                      {"name":{"value":"livingroom"}},
+                      {"name":{"value":"bathroom"}},
+                      {"name":{"value":"bedroom"}},
+                      {"name":{"value":"entrance"}},
+                      {"name":{"value":"refrigerator"}}
+                    ]
+                },
+                {
+                    "name": "HISTORIC_TIME",
+                    "values": [
+                      {"id": "day", "name":{"value":"today"}},
+                      {"id": "week", "name":{"value":"this week"}},
+                      {"id": "month", "name":{"value":"this month"}}
+                    ]
+                }
+            ]
+        }
+    }
+  }
+  
