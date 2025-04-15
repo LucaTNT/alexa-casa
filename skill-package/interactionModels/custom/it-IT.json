@@ -75,13 +75,90 @@
                 {
                     "name": "CONSUMPTION_DEVICE",
                     "values": [
-                      {"name":{"value":"casa"}},
-                      {"name":{"value":"lavatrice"}},
-                      {"name":{"value":"sala"}},
-                      {"name":{"value":"bagno"}},
-                      {"name":{"value":"camera"}},
-                      {"name":{"value":"ingresso"}},
-                      {"name":{"value":"frigo"}}
+                        {
+                          "id": "freezer_cantina",
+                          "name": {
+                            "value": "freezer cantina"
+                          }
+                        },
+                        {
+                          "id": "rete",
+                          "name": {
+                            "value": "rete"
+                          }
+                        },
+                        {
+                          "id": "lavastoviglie",
+                          "name": {
+                            "value": "lavastoviglie"
+                          }
+                        },
+                        {
+                          "id": "piano_cottura_e_forno",
+                          "name": {
+                            "value": "piano cottura e forno"
+                          }
+                        },
+                        {
+                          "id": "prese",
+                          "name": {
+                            "value": "prese"
+                          }
+                        },
+                        {
+                          "id": "auto",
+                          "name": {
+                            "value": "auto"
+                          }
+                        },
+                        {
+                          "id": "clima",
+                          "name": {
+                            "value": "clima"
+                          }
+                        },
+                        {
+                          "id": "casa",
+                          "name": {
+                            "value": "casa"
+                          }
+                        },
+                        {
+                          "id": "lavatrice",
+                          "name": {
+                            "value": "lavatrice"
+                          }
+                        },
+                        {
+                          "id": "sala",
+                          "name": {
+                            "value": "sala"
+                          }
+                        },
+                        {
+                          "id": "bagno",
+                          "name": {
+                            "value": "bagno"
+                          }
+                        },
+                        {
+                          "id": "camera",
+                          "name": {
+                            "value": "camera"
+                          }
+                        },
+                        {
+                          "id": "ingresso",
+                          "name": {
+                            "value": "ingresso"
+                          }
+                        },
+                        {
+                          "id": "frigo",
+                          "name": {
+                            "value": "frigo"
+                          }
+                        }
                     ]
                 },
                 {

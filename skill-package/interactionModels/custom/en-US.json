@@ -74,13 +74,48 @@
                 {
                     "name": "CONSUMPTION_DEVICE",
                     "values": [
-                      {"name":{"value":"house"}},
-                      {"name":{"value":"washer"}},
-                      {"name":{"value":"livingroom"}},
-                      {"name":{"value":"bathroom"}},
-                      {"name":{"value":"bedroom"}},
-                      {"name":{"value":"entrance"}},
-                      {"name":{"value":"refrigerator"}}
+                        {
+                          "id": "house",
+                          "name": {
+                            "value": "house"
+                          }
+                        },
+                        {
+                          "id": "washer",
+                          "name": {
+                            "value": "washer"
+                          }
+                        },
+                        {
+                          "id": "livingroom",
+                          "name": {
+                            "value": "livingroom"
+                          }
+                        },
+                        {
+                          "id": "bathroom",
+                          "name": {
+                            "value": "bathroom"
+                          }
+                        },
+                        {
+                          "id": "bedroom",
+                          "name": {
+                            "value": "bedroom"
+                          }
+                        },
+                        {
+                          "id": "entrance",
+                          "name": {
+                            "value": "entrance"
+                          }
+                        },
+                        {
+                          "id": "refrigerator",
+                          "name": {
+                            "value": "refrigerator"
+                          }
+                        }
                     ]
                 },
                 {

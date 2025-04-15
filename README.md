@@ -9,7 +9,7 @@ It enables me to:
 # What you need to change
 The most important thing is to implement the code that "generates" your entity ids based on what you need to check (for example today's whole-house energy usage). This is found in `InstantPowerUsageIntentHandler`, `HistoricEnergyUsageIntentHandler`.
 You should do the same in `DurataRiscaldamentoClimaOggiIntentHandler` to point to the entity you use to calculate the number of hours heating and air conditioning have been on for today.
-Don't forget the [interaction models](tree/main/skill-package/intractionModels/custom/).
+Don't forget the [interaction models](https://github.com/LucaTNT/alexa-casa/tree/main/skill-package/interactionModels/custom/).
 
  # How to deploy
  This skill is supposed to be deployed to AWS Lambda through [ask-cli](https://developer.amazon.com/en-US/docs/alexa/smapi/quick-start-alexa-skills-kit-command-line-interface.html).
