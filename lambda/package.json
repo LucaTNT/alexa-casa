@@ -9,7 +9,7 @@
   "author": "Luca Zorzi",
   "license": "Apache",
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">22.0.0"
   },
   "dependencies": {
     "ask-sdk-core": "^2.6.0",

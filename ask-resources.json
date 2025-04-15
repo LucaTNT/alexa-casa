@@ -12,7 +12,7 @@
       },
       "skillInfrastructure": {
         "userConfig": {
-          "runtime": "nodejs10.x",
+          "runtime": "nodejs22.x",
           "handler": "index.handler",
           "awsRegion": "eu-west-1"
         },
