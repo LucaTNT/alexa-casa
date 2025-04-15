@@ -105,7 +105,7 @@ const HistoricEnergyUsageIntentHandler = {
     },
     async handle(handlerInput) {
         try {
-            let consumption_device = Alexa.getSlotValue(handlerInput.requestEnvelope, "What") || 'casa'; // English: House
+            let consumption_device = getSlotId(Alexa.getSlot(handlerInput.requestEnvelope, "What")) || 'casa'; // English: House
             let historic_time = getSlotId(Alexa.getSlot(handlerInput.requestEnvelope, "When")) || 'giorno'; // English: day
             let historic_time_name = Alexa.getSlotValue(handlerInput.requestEnvelope, "When") || 'oggi'; // English: today
 
@@ -114,13 +114,10 @@ const HistoricEnergyUsageIntentHandler = {
 
             // The following is due to the way I structured my energy meters in Home Assistant:
             // - They all have the sensor.energia_ prefix (energia = energy)
-            // - Then there is the "room" name (except for the whole house, which has no name)
-            // - Finally there is the timing suffix: giornaliera (= daily), settimanale (= weekly) or mensile (= monthly)
-            // e.g.: sensor.energia_sala_settimanale = energy used this week by the living room lights
+            // - Then there is the timing suffix: giornaliera (= daily), settimanale (= weekly) or mensile (= monthly)
+            // - Finally, there is the "room" name (except for the whole house, which has no name)
+            // e.g.: sensor.energia_settimanale_sala = energy used this week by the living room lights
             var sensor = "sensor.energia_";
-            if (consumption_device != "casa") {
-                sensor += consumption_device + "_";
-            }
 
             switch (historic_time) {
                 case 'settimana':
@@ -134,6 +131,11 @@ const HistoricEnergyUsageIntentHandler = {
                     sensor += "giornaliera";
                     break;
             }
+            if (consumption_device != "casa") {
+                sensor += "_" + consumption_device;
+            }
+
+            console.log(`sensor = ${sensor}`)
 
             let energy = parseFloat(await get_home_assistant_current_state(sensor))
             let energy_string = energy >= 1 ? `${roundToString(energy)} kilowatt` : `${roundToString(energy*1000)} watt` 
